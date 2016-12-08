@@ -13,7 +13,7 @@ html, body, #app {
 
 body {
   background: #eee;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Josefin Slab", Arial, sans-serif;
 }
 
 h1 {
@@ -31,6 +31,17 @@ ul {
 .app {
   white-space: nowrap;
   height: 100%;
+}
+
+.app-title {
+  font-size: 50px;
+  padding-left: 25px;
+}
+
+.app-title_text {
+  font-size: 20px;
+  padding-left: 25px;
+  border-bottom: 2px #e5e5df solid;
 }
 
 .list {
@@ -51,7 +62,6 @@ ul {
   right: 0;
   width: 1px;
   height: 99%;
-  background: linear-gradient(to bottom, #eee 0%, #ccc 50%, #eee 100%) fixed;
 }
 
 .card {
@@ -100,4 +110,71 @@ ul {
   padding: 10px;
   margin-top: 5px;
   border-radius: 3px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.card.big {
+  white-space: pre-wrap;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  padding: 15px;
+  top: 0; left: 0; bottom: 100px; right: 0;
+  z-index: 3;
+}
+.card.big input[type=text], textarea {
+  width : 100%;
+  margin: 3px 0;
+  font-size: 13px;
+  border: none;
+}
+
+.card.big input[type=text] {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card.big input[type=text]:focus,
+.card.big textarea:focus {
+  outline: dashed thin #999;
+  outline-offset: 2px;
+}
+.card.big label {
+  margin: 3px 0 7px 3px;
+  color: #a7a7a7;
+  display: inline-block;
+  width: 60px;
+}
+.actions {
+  margin-top: 10px;
+  text-align: right;
+}
+.card.big button {
+  font-size:14px;
+  padding: 8px;
+}
+
+.float-button {
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  z-index: 2;
+  right: 20px;
+  bottom: 20px;
+  background: #D43A2F;
+  color: white;
+  border-radius: 100%;
+  font-size: 34px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  box-shadow: 0 3px 3px black;
 }
